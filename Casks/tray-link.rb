@@ -1,15 +1,16 @@
 cask "tray-link" do
-  version "2.2.7"
-  sha256 "a923a4bc90c13345a46455cb00ac9903e8b5ee0d40f70df8834f00ddb45e6fcc"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://github.com/thejoaov/tray-link/releases/download/v2.2.7/Tray-Link-macOS-universal.zip"
+  version "2.2.10"
+  sha256 "8ac3ef24ee0b030a5d6ab2f870de9b799e1535a5fc079ca63268fd55c767f8df"
+
+  url "https://github.com/thejoaov/tray-link/releases/download/v2.2.10/Tray-Link-macOS-universal.zip"
   name "Tray Link"
   desc "Manage your projects from the system tray"
   homepage "https://github.com/thejoaov/tray-link"
 
   app "Tray Link.app"
-
-
+  binary "#{appdir}/Tray Link.app/Contents/Resources/tlink-#{arch}", target: "tlink"
 
   zap trash: [
 
@@ -18,6 +19,8 @@ cask "tray-link" do
     "~/Library/Preferences/com.thejoaov.tray-link.plist",
 
     "~/Library/Caches/com.thejoaov.tray-link",
+
+    "~/.tray-link",
 
   ]
 
