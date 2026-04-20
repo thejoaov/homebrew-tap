@@ -1,10 +1,10 @@
 cask "tray-link" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.2.11"
-  sha256 "fa5f53bdfa21c4c7bd647ebce111b54e737cfcfd97249ca6e569d237bdeca6ca"
+  version "2.2.12"
+  sha256 "ffbfb753f7e0e31cd78e6f652d0c8b6924dd6dce140b6a518f6b2e3fa8bbe258"
 
-  url "https://github.com/thejoaov/tray-link/releases/download/v2.2.11/Tray-Link-macOS-universal.zip"
+  url "https://github.com/thejoaov/tray-link/releases/download/v2.2.12/Tray-Link-macOS-universal.zip"
   name "Tray Link"
   desc "Manage your projects from the system tray"
   homepage "https://github.com/thejoaov/tray-link"
