@@ -2,7 +2,7 @@ cask "tray-link" do
   arch arm: "arm64", intel: "x64"
 
   version "2.2.19"
-  sha256 "29c71ce19ac338549c5c2e40bf8416cb1db527308cb0c43c735e0ef91e7ed5f0"
+  sha256 "fe43187c8e216db838c98d8b1b909f0f74da5f9821b317fe11a37e425958597b"
 
   url "https://github.com/thejoaov/tray-link/releases/download/v2.2.19/Tray-Link-macOS-universal.zip"
   name "Tray Link"
